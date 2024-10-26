@@ -1,0 +1,4 @@
+ARG COBALT_HARDWARE="main"
+ARG FEDORA_BASE="40"
+
+FROM ghcr.io/ublue-os/silverblue-${COBALT_HARDWARE}:${FEDORA_BASE}
