@@ -3,11 +3,9 @@ Cobalt is an easy-to-use distribution of Linux built on Universal Blue. It's fai
 
 There are plans to include an application named Fusion that will make it easy to engage with atomic aspects of the system, including going so far as to allow modification of protected files through automatically-generated layered packages. As of right now, development hasn't begun on this software.
 
-If you've ever wanted a version of GNOME OS that's built to be a daily driver, Cobalt might just be what you're looking for.
-
 ## Status
 
-Cobalt is currently in early development and shouldn't be used for non-developmental purposes. Contributions would be appreciated.
+Cobalt is currently in very early development and shouldn't be used for non-developmental purposes. Contributions would be appreciated.
 
 ## Contributing
 
