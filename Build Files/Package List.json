@@ -1,7 +1,18 @@
 {
 	"All": {
 		"Added": [],
-		"Removed": []
+		"Removed": [
+			"fzf",
+			"htop",
+			"nvtop",
+			"lshw",
+			"nvme-cli",
+			"squashfs-tools",
+			"tcpdump",
+			"tmux",
+			"traceroute",
+			"kernel-tools"
+		]
 	},
 	"40": {
 		"Added": [],
