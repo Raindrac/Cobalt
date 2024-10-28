@@ -57,8 +57,6 @@ command+=( --tag ${image_address} )
 
 echo "Running command \"$(tput setaf 2)${command[@]}$(tput sgr0)\""
 ${command[@]}
-podman push ${image_address}
 
-echo ""
-echo "Your image is ready to go! Rebase to it now by running the following command:"
-echo "\"$(tput setaf 2)rpm-ostree rebase ${image_address}$(tput sgr0)\""
+# Now that the containerfile is done running, we conclude the build
+"./Build Scripts/End Image Build.sh" "${image_address}"
