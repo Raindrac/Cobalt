@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-echo "Preparing to build image..."
+echo "$(tput bold)Preparing to build image...$(tput sgr0)"
 
 # First, retrieve the input from the just command. We'll need it later
 cobalt_hardware="$1"
@@ -55,7 +55,7 @@ command+=( --build-arg="COBALT_HARDWARE=${cobalt_hardware}" )
 command+=( --build-arg="FEDORA_BASE=${fedora_base}" )
 command+=( --tag ${image_address} )
 
-echo "Running command \"$(tput setaf 2)${command[@]}$(tput sgr0)\""
+echo "$(tput bold)Running command \"$(tput setaf 2)${command[@]}$(tput sgr0)\""
 ${command[@]}
 
 # Now that the containerfile is done running, we conclude the build
