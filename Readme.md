@@ -1,7 +1,7 @@
 # Cobalt
-Cobalt is an easy-to-use distribution of Linux built on Universal Blue. It's faithful to GNOME design principles and aims to provide a GNOME experience that's faithful to the original design intentions. Furthermore, it's atomic; like other Universal Blue spins, your system's essential files are protected to ensure system stability.
+Cobalt is an easy-to-use distribution of Linux built on the foundation of Universal Blue. It's faithful to GNOME design principles and aims to provide a GNOME experience that's faithful to the original design intentions. Furthermore, it's atomic; like other Universal Blue spins, your system's essential files are protected to ensure system stability.
 
-There are plans to include an application named Fusion that will make it easy to engage with atomic aspects of the system, including going so far as to allow modification of protected files through automatically-generated layered packages. As of right now, development hasn't begun on this software.
+To improve the atomic experience, Cobalt will eventually include its own suite of software. Software development hasn't began yet; right now, the focus is on preparing the foundation.
 
 ## Status
 
