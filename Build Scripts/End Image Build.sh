@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# 🛠 Build Step 5: "./Build Scripts/End Image Build.sh"
+#   🠈 Previous Step: Resume running "./Build Scripts/Start Image Build.sh"
 set -euo pipefail
 
 echo ${1}

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# 🛠 Build Step 1: Run the beginning of "./Build Scripts/Start Image Build.sh"
+#   🠊 Next Step: Run podman build on "./Containerfile"
 set -euo pipefail
 echo "$(tput bold)Preparing to build image...$(tput sgr0)"
 
@@ -57,6 +59,11 @@ command+=( --tag ${image_address} )
 
 echo "$(tput bold)Running command \"$(tput setaf 2)${command[@]}$(tput sgr0)\""
 ${command[@]}
+# 🛠 🠊 Go to "./Containerfile"
 
-# Now that the containerfile is done running, we conclude the build
+# 🛠 Build Step 4: Resume running "./Build Scripts/Start Image Build.sh"
+#   🠈 Previous Step: Run "./Build Scripts/Manage Packages.sh"
+#   🠊 Next Step: Run "./Build Scripts/End Image Build.sh"
+
 "./Build Scripts/End Image Build.sh" "${image_address}"
+# 🛠 🠊 Go to "./Build Scripts/End Image Build.sh"

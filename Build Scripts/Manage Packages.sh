@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# 🛠 Build Step 3: Run "./Build Scripts/Manage Packages.sh"
+#   🠈 Previous Step: Run podman build on "./Containerfile"
+#   🠊 Next Step: Resume running "./Build Scripts/Start Image Build.sh"
 set -euo pipefail
 export TERM=xterm-256color
 
@@ -20,3 +23,5 @@ if [ ${#packages_removed[*]} -gt 0 ]; then
 	echo ""
 	rpm-ostree uninstall -y ${packages_removed[*]}
 fi
+
+# 🛠 🠊 Go back to "./Build Scripts/Start Image Build.sh"
