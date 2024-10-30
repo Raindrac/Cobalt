@@ -15,5 +15,6 @@ ARG FEDORA_BASE="40"
 RUN --mount=type=bind,from=buildscripts,source="/Build Scripts",target="/Build Scripts" \
 	--mount=type=bind,from=buildscripts,source="/Build Files",target="/Build Files" \
 	mkdir -p /var/lib/alternatives && \
-	"/Build Scripts/Manage Packages.sh" && \ # 🛠 🠊 Go to "./Build Scripts/Manage Packages.sh"
+	"/Build Scripts/Manage Packages.sh" && \
+	# 🛠 🠊 Go to "./Build Scripts/Manage Packages.sh"
 	ostree container commit
