@@ -1,6 +1,5 @@
 # 🛠 Build Step 2: Run podman build on "./Containerfile"
-#   🠈 Previous Step: Run the beginning of "./Build Scripts/Start Image Build.sh"
-#   🠊 Next Step: Run "./Build Scripts/Manage Packages.sh"
+# 🛠 🠋 Start here from "./Build Scripts/Start Image Build.sh"
 ARG COBALT_HARDWARE="main"
 ARG FEDORA_BASE="40"
 
@@ -17,4 +16,6 @@ RUN --mount=type=bind,from=buildscripts,source="/Build Scripts",target="/Build S
 	mkdir -p /var/lib/alternatives && \
 	"/Build Scripts/Manage Packages.sh" && \
 	# 🛠 🠊 Go to "./Build Scripts/Manage Packages.sh"
+	# 🛠 🠋 Start here from "./Build Scripts/Manage Packages.sh"
 	ostree container commit
+	# 🛠 🠊 Go back to "./Build Scripts/Start Image Build.sh"
